@@ -1,6 +1,6 @@
 # node-utils
 
-[![npm version](https://badge.fury.io/js/node-utils.svg)](https://badge.fury.io/js/node-utils) [![CircleCI](https://circleci.com/gh/dwmkerr/node-utils.svg?style=shield)](https://circleci.com/gh/dwmkerr/node-utils) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/3e334rknhjbpx555?svg=true)](https://ci.appveyor.com/project/dwmkerr/node-utils) [![codecov](https://codecov.io/gh/dwmkerr/node-utils/branch/master/graph/badge.svg)](https://codecov.io/gh/dwmkerr/node-utils) [![dependencies Status](https://david-dm.org/dwmkerr/node-utils/status.svg)](https://david-dm.org/dwmkerr/node-utils) [![devDependencies Status](https://david-dm.org/dwmkerr/node-utils/dev-status.svg)](https://david-dm.org/dwmkerr/node-utils?type=dev) [![GuardRails badge](https://badges.guardrails.io/dwmkerr/node-utils.svg?token=569f2cc38a148f785f3a38ef0bcf5f5964995d7ca625abfad9956b14bd06ad96&provider=github)](https://dashboard.guardrails.io/default/gh/dwmkerr/node-utils) [![Greenkeeper badge](https://badges.greenkeeper.io/dwmkerr/node-utils.svg)](https://greenkeeper.io/) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![npm version](https://badge.fury.io/js/%40dwmkerr%2Fnode-utils.svg)](https://badge.fury.io/js/%40dwmkerr%2Fnode-utils) [![CircleCI](https://circleci.com/gh/dwmkerr/node-utils.svg?style=shield)](https://circleci.com/gh/dwmkerr/node-utils) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/3e334rknhjbpx555?svg=true)](https://ci.appveyor.com/project/dwmkerr/node-utils) [![codecov](https://codecov.io/gh/dwmkerr/node-utils/branch/master/graph/badge.svg)](https://codecov.io/gh/dwmkerr/node-utils) [![dependencies Status](https://david-dm.org/dwmkerr/node-utils/status.svg)](https://david-dm.org/dwmkerr/node-utils) [![devDependencies Status](https://david-dm.org/dwmkerr/node-utils/dev-status.svg)](https://david-dm.org/dwmkerr/node-utils?type=dev) [![GuardRails badge](https://badges.guardrails.io/dwmkerr/node-utils.svg?token=569f2cc38a148f785f3a38ef0bcf5f5964995d7ca625abfad9956b14bd06ad96&provider=github)](https://dashboard.guardrails.io/default/gh/dwmkerr/node-utils) [![Greenkeeper badge](https://badges.greenkeeper.io/dwmkerr/node-utils.svg)](https://greenkeeper.io/) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 Basic Node.js utility functions. Complements the standard library, no dependencies.
 
@@ -83,7 +83,7 @@ To create a release.
 
 - Merge your work to master.
 - Use `npm run release`.
-- Push and deploy `git push --tags && git push && npm publish`
+- Deploy by running `make publish`.
 
 Note that `semantic-version` is used, meaning a changelog is automatically kept up to date, and versioning is handled semantically based on the commit message.
 
@@ -94,3 +94,4 @@ Builds are run on CircleCI. You can run the CircleCI build locally with the foll
 ```
 make circleci
 ```
+

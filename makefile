@@ -15,6 +15,10 @@ circleci:
 	circleci build --job test-node10
 	circleci build --job test-node12
 
+.PHONY: publish
+publish:
+	git push --follow-tags origin master && npm publish --access public
+
 # Let make know that these commands are not folder or file names, but command
 # names (otherwise a folder called 'test' could stop the test recipe working).
 .PHONY: build test circleci
