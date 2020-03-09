@@ -1,5 +1,5 @@
 {
-  "name": "@dwmkerr/app-version",
+  "name": "@dwmkerr/node-utils",
   "version": "0.1.1",
   "description": "Basic Node.js utility functions. Complements the standard library, no dependencies.",
   "main": "./src/index.js",
