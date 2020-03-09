@@ -1,0 +1,59 @@
+{
+  "name": "@dwmkerr/app-version",
+  "version": "0.1.0",
+  "description": "Basic Node.js utility functions. Complements the standard library, no dependencies.",
+  "main": "./src/index.js",
+  "engines": {
+    "node": ">=8.5"
+  },
+  "scripts": {
+    "test": "mocha ./src/{,**/}*.specs.js",
+    "test:debug": "mocha -d -w ./src/{,**/}*.specs.js",
+    "cov": "nyc mocha ./src/{,**/}*.specs.js",
+    "lint": "eslint .",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwmkerr/node-utils.git"
+  },
+  "keywords": [
+    "utilities"
+  ],
+  "author": "Dave Kerr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dwmkerr/node-utils/issues"
+  },
+  "homepage": "https://github.com/dwmkerr/node-utils#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^9.1.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0",
+    "standard-version": "^7.1.0"
+  },
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "rimraf": "^3.0.0"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "src/**/*.js"
+    ],
+    "exclude": [
+      "src/**/*.specs.js"
+    ],
+    "reporter": [
+      "text",
+      "html",
+      "lcov"
+    ],
+    "cache": true,
+    "report-dir": "./artifacts/coverage"
+  }
+}
